@@ -20,6 +20,10 @@
             max-width: 200px;
             border-radius: 50%;
         }
+
+        .nav-link {
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -34,24 +38,22 @@
         <div class="row">
             <div class="col-md-6">
                 <h2>About Me</h2>
-                <p>
-                    Hello! I'm Norman, a Computer Engineering graduate from the University of Pretoria. I take pride in my
-                    academic journey, having graduated with distinction. My passion for technology and problem-solving led me to
-                    pursue a career as a Software Engineer.
-            
-                    Currently, I am actively contributing to the world of software development, where I continuously strive to
-                    enhance my skills and stay updated with the latest industry trends. I find joy in creating efficient and elegant
-                    solutions to complex problems, and my dedication to excellence has been recognized in my academic and
-                    professional endeavors.
-            
-                    In addition to my technical pursuits, I have set my sights on the business realm. Looking towards the future, I
-                    aspire to pursue an MBA to complement my technical expertise with a solid foundation in business strategy and
-                    leadership. I believe that this combination will empower me to make meaningful contributions in both the
-                    technological and business landscapes.
-            
-                    Join me on this exciting journey as I navigate the ever-evolving world of software engineering and set my sights
-                    on new horizons in business and leadership.
-                </p>
+                Hello! I'm Norman, a Computer Engineering graduate from the University of Pretoria. I take pride in my
+                academic journey, having graduated with distinction. My passion for technology and problem-solving led me to
+                pursue a career as a Software Engineer.
+                
+                Currently, I am actively contributing to the world of software development, where I continuously strive to
+                enhance my skills and stay updated with the latest industry trends. I find joy in creating efficient and elegant
+                solutions to complex problems, and my dedication to excellence has been recognized in my academic and
+                professional endeavors.
+                
+                In addition to my technical pursuits, I have set my sights on the business realm. Looking towards the future, I
+                aspire to pursue an MBA to complement my technical expertise with a solid foundation in business strategy and
+                leadership. I believe that this combination will empower me to make meaningful contributions in both the
+                technological and business landscapes.
+                
+                Join me on this exciting journey as I navigate the ever-evolving world of software engineering and set my sights
+                on new horizons in business and leadership.
             </div>
 
             <div class="col-md-6">
@@ -68,62 +70,8 @@
         <div class="row mt-4">
             <div class="col-md-12">
                 <h2>Projects</h2>
-                <div class="card mt-3">
-                    <div class="card-body">
-                        <h5 class="card-title">LDPC Codes Implementation for Video Transmission</h5>
-                        <p class="card-text">
-                            For my final year project during my engineering degree at the University of Pretoria, I undertook the
-                            challenging task of implementing LDPC (Low-Density Parity-Check) codes in hardware. Leveraging the power of
-                            STM32 embedded platforms, I successfully developed a robust system that demonstrated exceptional performance
-                            in video transmission applications.
-                
-                            The system boasted impressive achievements, including a Bit Error Rate (BER) below 10^-4 within 2 dB of the
-                            Shannon limit. This outstanding result was achieved with a code rate of 0.5, a codeword length of 4096 bits,
-                            and an impressive decoding rate of 4096 bits/s. These accomplishments not only showcased my dedication to
-                            pushing the boundaries of technology but also highlighted my ability to optimize system parameters for
-                            optimal performance.
-                
-                            This project was not only a culmination of my academic journey but also a testament to my commitment to
-                            excellence. It played a pivotal role in my graduation with distinction, underscoring my proficiency in both
-                            theoretical concepts and hands-on implementation.
-                
-                            The LDPC codes implementation for video transmission is a proud milestone in my career, reflecting my
-                            passion for cutting-edge technology and my capability to deliver tangible and high-impact solutions to
-                            real-world challenges.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card mt-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Line Following Robot Car - Microcontroller Module Project</h5>
-                        <p class="card-text">
-                            As part of a collaborative effort during our microcontroller module, I spearheaded a dynamic team project
-                            that involved the design and implementation of a Line Following Robot Car. This innovative project was a
-                            highlight in my academic journey, showcasing my leadership in software development and human-machine
-                            interface design.
-                
-                            In this exciting venture, our team pushed the boundaries of microcontroller programming, opting for assembly
-                            language on the PIC18 platform. I assumed a leadership role in the software development process, crafting
-                            the control system for the robot and designing an intuitive Human-Machine Interface (HMI). The combination
-                            of precise control algorithms and an interactive user interface contributed to the seamless operation of our
-                            robot.
-                
-                            Our hard work and dedication paid off as our robot not only qualified for the finals but also secured a
-                            commendable 7th place in the annual robot race. This achievement underscored the effectiveness of our
-                            software-driven approach in a competitive setting.
-                
-                            In addition to the core robot control software, I extended our project's capabilities by creating a terminal
-                            application in Python. This interface provided a versatile means of communication with the robot, enhancing
-                            its usability and facilitating real-time adjustments during testing and competition.
-                
-                            The Line Following Robot Car project stands as a testament to my proficiency in low-level programming,
-                            teamwork, and creative problem-solving. It reflects my commitment to exploring diverse technologies and
-                            leveraging software to bring innovative ideas to life.
-                        </p>
-                    </div>
-                </div>
-
+                <p>Explore my projects in more detail on the <a class="nav-link" onclick="loadProjectsPage()">Projects
+                        Page</a>.</p>
             </div>
         </div>
     </div>
@@ -131,6 +79,12 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function loadProjectsPage() {
+            window.location.href = "projects.html";
+        }
+    </script>
 </body>
 
 </html>
